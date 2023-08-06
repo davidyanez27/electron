@@ -522,9 +522,9 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-orange-600 {
+.bg-red-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .text-3xl {
