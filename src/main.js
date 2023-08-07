@@ -11,7 +11,7 @@ function createWindow(){
             nodeIntegration: true
         }
     })
-    window.loadFile(path.join(__dirname, 'ui/index.html'));
+    window.loadFile(path.join(__dirname, 'components/index.html'));
 }
 
 module.exports = {
