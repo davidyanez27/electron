@@ -2,7 +2,11 @@
 @tailwind components;
 
 .navbar {
-    @apply w-full h-96;
+    @apply w-full h-96 fixed;
+    
+}
+.document_form {
+    @apply w-full h-screen;
 }
 
 @tailwind utilities;
