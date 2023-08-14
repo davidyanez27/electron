@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html class="h-full">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="../../dist/output.css" rel="stylesheet">
-    <script src='main.js'></script>
-</head>
-<body class="flex flex-row h-full w-full">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <script src="main.js"></script>
+  </head>
+  <body class="flex flex-row h-full w-full">
+    <div class="bg-blue-200 w-full flex items-center">
+      <div class="bg-white p-10 rounded-lg shadow md:w-10/12 mx-auto lg:w-9/12">
+        <form action="">
+          <div class="mb-5 w-1/2">
+            <label for="name" class="block mb-2 font-bold text-gray-600"
+              >NOMBRE DEL PADRE</label
+            >
+            <input
+              type="text"
+              id="father"
+              name="father"
+              placeholder="NOMBRE COMPLETO"
+              class="border border-gray-300 shadow p-3 w-full rounded mb-"
+            />
+          </div>
 
-  <div class="bg-blue-200 h-full w-1/2">left</div>
-  
-    <div class="bg-red-200 h-full w-1/2 flex items-center">
-      <div class="w-full">
-        <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Document</h2>
-        <div class="bg-white p-10 rounded-lg shadow md:w-10/12 mx-auto lg:w-9/12">
-          <form action="">
-            <div class="mb-5">
-              <label for="name" class="block mb-2 font-bold text-gray-600">Name</label>
-              <input type="text" id="name" name="name" placeholder="Put in your fullname." class="border border-gray-300 shadow p-3 w-full rounded mb-">
+          <div class="mb-5">
+            <label for="twitter" class="block mb-2 font-bold text-gray-600"
+              >Twitter</label
+            >
+            <input
+              type="text"
+              id="twitter"
+              name="twitter"
+              placeholder="Put in your fullname."
+              class="border border-red-300 shadow p-3 w-full rounded mb-"
+            />
+            <p class="text-sm text-red-400 mt-2">
+              Twitter username is required
+            </p>
+          </div>
+
+          <button
+            class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg"
+          >
+            Submit
+          </button>
+
+          <div class="mx-auto max-w-sm">
+            <h1 class="mb-6 pt-6"> Estado civil :</h1>
+            
+            <div class="pl-12">
+            
+             <div class="flex items-center mr-4 mb-4">
+               <input id="radio1" type="radio" name="radio" class="hidden" checked />
+               <label for="radio1" class="flex items-center cursor-pointer text-xl">
+                <span class="w-8 h-8 inline-block mr-2 rounded-full border border-grey flex-no-shrink"></span>
+                soltero</label>
+              </div>
+           
+              <div class="flex items-center mr-4 mb-4">
+               <input id="radio2" type="radio" name="radio" class="hidden" />
+               <label for="radio2" class="flex items-center cursor-pointer text-xl">
+                <span class="w-8 h-8 inline-block mr-2 rounded-full border border-grey flex-no-shrink"></span>
+                casado</label>
+              </div>
+             
+               <div class="flex items-center mr-4 mb-4">
+               <input id="radio3" type="radio" name="radio" class="hidden" />
+               <label for="radio3" class="flex items-center cursor-pointer text-xl">
+                <span class="w-8 h-8 inline-block mr-2 rounded-full border border-grey flex-no-shrink"></span>
+                union libre</label>
+              </div>
+            
+            
             </div>
-   
-            <div class="mb-5">
-              <label for="twitter" class="block mb-2 font-bold text-gray-600">Twitter</label>
-              <input type="text" id="twitter" name="twitter" placeholder="Put in your fullname." class="border border-red-300 shadow p-3 w-full rounded mb-">
-              <p class="text-sm text-red-400 mt-2">Twitter username is required</p>
-            </div>
-   
-            <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg">Submit</button>
-          </form>
-        </div>
+           </div>
+          
+        </form>
       </div>
     </div>
 
- 
-
-  
-  <!--div class="w-full lg:w-1/2 py-16 px-12">
+    <!--div class="w-full lg:w-1/2 py-16 px-12">
     <h2  class="text-3xl mb-4">Register</h2>
     <p class="mb-4">
       Create your account. It’s free and only take a minute
@@ -78,7 +122,65 @@
         <button class="w-full bg-purple-500 py-3 text-center text-white">Register Now</button>
       </div>
     </form>
+
+
+
+
+
+
+    <div class="bg-blue-200 h-full w-1/2">left</div>
+    <div class="bg-red-200 h-full w-1/2 flex items-center">
+      <div class="w-full">
+        <h2
+          class="text-center text-blue-400 font-bold text-2xl uppercase mb-10"
+        >
+          Document
+        </h2>
+        <div
+          class="bg-white p-10 rounded-lg shadow md:w-10/12 mx-auto lg:w-9/12"
+        >
+          <form action="">
+            <div class="mb-5">
+              <label for="name" class="block mb-2 font-bold text-gray-600"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Put in your fullname."
+                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="twitter" class="block mb-2 font-bold text-gray-600"
+                >Twitter</label
+              >
+              <input
+                type="text"
+                id="twitter"
+                name="twitter"
+                placeholder="Put in your fullname."
+                class="border border-red-300 shadow p-3 w-full rounded mb-"
+              />
+              <p class="text-sm text-red-400 mt-2">
+                Twitter username is required
+              </p>
+            </div>
+
+            <button
+              class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
   </div-->
-    
-</body>
+  </body>
 </html>
