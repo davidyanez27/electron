@@ -20,6 +20,7 @@
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1",
     "electron-squirrel-startup": "^1.0.0",
+    "flowbite": "^1.8.1",
     "promise-mysql": "^5.2.0"
   },
   "devDependencies": {
