@@ -5,7 +5,7 @@
     @apply w-full h-96 fixed;
     
 }
-.document_form {
+.iframe{
     @apply w-full h-screen;
 }
 
